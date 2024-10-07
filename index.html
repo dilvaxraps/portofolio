@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-3xl font-bold">John Doe</h1>
+        <p>Insinyur Perangkat Lunak | Pengembang Java</p>
+    </header>
+
+    <main class="container mx-auto my-8">
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold">Tentang Saya</h2>
+            <p class="mt-2">Saya seorang insinyur perangkat lunak yang bersemangat dengan pengalaman 1 tahun dalam pengembangan Java. Saya suka memecahkan masalah dan membangun aplikasi yang efisien.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold">Projects</h2>
+            <ul class="list-disc pl-5">
+                <li class="mt-2">
+                    <strong>Project 1:</strong> <a href="#" class="text-blue-600 hover:underline">Aplikasi Java untuk Manajemen Tugas</a>
+                    <p>Aplikasi pengelolaan tugas sederhana yang dibuat menggunakan Java dan Spring Boot.</p>
+                </li>
+                <li class="mt-2">
+                    <strong>Project 2:</strong> <a href="#" class="text-blue-600 hover:underline">Situs Web E-niaga</a>
+                    <p>Platform e-niaga yang dikembangkan dengan Java dan Hibernate untuk pengelolaan data.</p>
+                </li>
+                <li class="mt-2">
+                    <strong>Project 3:</strong> <a href="#" class="text-blue-600 hover:underline">Aplikasi Chat</a>
+                    <p>Aplikasi obrolan real-time yang dibangun menggunakan teknologi Java dan WebSocket.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold">Skills</h2>
+            <ul class="grid grid-cols-2 gap-4 mt-2">
+                <li class="bg-white p-4 shadow rounded">Java</li>
+                <li class="bg-white p-4 shadow rounded">Spring Boot</li>
+                <li class="bg-white p-4 shadow rounded">Hibernate</li>
+                <li class="bg-white p-4 shadow rounded">HTML/CSS</li>
+                <li class="bg-white p-4 shadow rounded">JavaScript</li>
+                <li class="bg-white p-4 shadow rounded">SQL</li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold">Contact Me</h2>
+            <form id="contact-form" class="mt-4">
+                <input type="text" id="name" placeholder="Dilvavirgy" class="border p-2 rounded w-full mb-4" required>
+                <input type="email" id="email" placeholder="dilvaahmadsufi28@gmail.com" class="border p-2 rounded w-full mb-4" required>
+                <textarea id="message" placeholder="Your Message" class="border p-2 rounded w-full mb-4" required></textarea>
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white text-center p-4">
+        &copy; 2024 John Doe. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
